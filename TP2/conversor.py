@@ -2,7 +2,7 @@ import re
 import sys
 
 # Ler o conteúdo do arquivo .md
-with open("tpc.md", "r", encoding="utf-8") as file:
+with open("exemplo.md", "r", encoding="utf-8") as file:
     markdown_content = file.read()
 
 
