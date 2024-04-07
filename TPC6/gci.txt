@@ -8,15 +8,15 @@ P:
                 | id igual VAR {id}
                 | vazio {vazio}
 
-    EXP -> VAR SINAL VAR {numero, id, +, -, *, /}
-         | vazio {vazio}
+    EXP -> VAR SINAL VAR 
+         | vazio {vazio, )}
     
     SINAL -> + {+}
            | - {-}
            | * {*}
            | / {/}
     
-    VAR -> (EXP)  {(}
+    VAR -> ( EXP )  {(}
         | numero  {numero} 
         | id      {id}
         | vazio   {vazio}
